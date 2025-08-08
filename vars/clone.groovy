@@ -1,5 +1,5 @@
 def call(String branch, String repo, String githubCreds) {
-    stage('Clone') {
+    stage('clone') {
         git branch: branch, credentialsId: githubCreds, url: repo
     }
 }
